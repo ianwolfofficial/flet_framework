@@ -15,12 +15,12 @@ def main(page: ft.Page):
         bgcolor="#FF0000",
     )
     page.bgcolor = "#151B54"
+    # processing data with pandas
     dik = {
         "name": ["ian", "john", "kira", "luke"],
         "profession": ["programmer", "wrestler", "actress", "gamer"],
         "age": [23, 40, 29, 31],
     }
-    # processing data with pandas
     dik = pd.DataFrame(dik)
 
     # plot the barchart graph
@@ -79,7 +79,7 @@ def main(page: ft.Page):
                 ],
             ),
         ],
-        # setting border color thorughout
+        # setting border color throughout
         border=ft.border.all(1, ft.colors.BLUE),
         # setting up left/ y axis with title and labels
         left_axis=ft.ChartAxis(
@@ -91,7 +91,7 @@ def main(page: ft.Page):
         bottom_axis=ft.ChartAxis(
             title=ft.Text("NAMES", color="red", size=30),
             title_size=40,
-            # adjusting labels individually
+            # adjusting the labels individually
             labels=[
                 ft.ChartAxisLabel(
                     value=0,
@@ -120,7 +120,7 @@ def main(page: ft.Page):
             ],
             labels_size=40,
         ),
-        # configuring th grid lines
+        # configuring the grid lines
         horizontal_grid_lines=ft.ChartGridLines(
             color=ft.colors.RED, width=1, dash_pattern=[3, 3]
         ),
