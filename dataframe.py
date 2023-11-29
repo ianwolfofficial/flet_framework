@@ -23,7 +23,7 @@ def main(page: ft.Page):
     }
     dik = pd.DataFrame(dik)
 
-    # plot the barchart graph
+    # plotting the barchart graph
     chart = ft.BarChart(
         bar_groups=[
             ft.BarChartGroup(
